@@ -17,9 +17,9 @@ curl http://todoapp-service.todoapp.svc.cluster.local
 
 ### To test ToDo application using the service port-forward command
 ```bash
-kubectl port-forward service/todoapp-service 8081:80
+kubectl port-forward service/todoapp-service 8081:80 -n todoapp
 ```
 > Where: `kubectl port-forward service/<clusterIp-service-name> 8081:80`
 
 ### To access an app using a NodePort Service
-Open in browser: [localhost:30007](https://localhost:30007)
+Open in browser: [localhost:30007](http://localhost:30007)

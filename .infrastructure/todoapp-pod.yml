@@ -12,7 +12,7 @@ spec:
       imagePullPolicy: Always
       env:
         - name: PYTHONUNBUFFERED
-          value: 1
+          value: "1"
       ports:
         - containerPort: 8080
       livenessProbe:
@@ -43,7 +43,7 @@ spec:
       imagePullPolicy: Always
       env:
         - name: PYTHONUNBUFFERED
-          value: 1
+          value: "1"
       ports:
         - containerPort: 8080
       livenessProbe:
